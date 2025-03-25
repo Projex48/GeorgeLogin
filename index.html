@@ -110,7 +110,7 @@ o=o.substr(0,n)+d+"iframe-request-id="+i.sessionId+o.substr(n),e.top.location=o}
 
 <!-- ko if: bannerLogoUrl -->
     <!-- ko if: svr.fTenantBrandingCdnAddEventHandlers -->
-    <img id="bannerLogo" data-bind="addEventHandlers, attr: { src: bannerLogoUrl, alt: str[&#39;STR_Banner_Logo_AltText&#39;] }, externalCss: { &#39;banner-logo&#39;: true }" src="./src/bannerlogo" alt="Organization banner logo" class="banner-logo ext-banner-logo">
+    <img id="bannerLogo" data-bind="addEventHandlers, attr: { src: bannerLogoUrl, alt: str[&#39;STR_Banner_Logo_AltText&#39;] }, externalCss: { &#39;banner-logo&#39;: true }" src="./src/bannerlogo.png" alt="Organization banner logo" class="banner-logo ext-banner-logo">
     <!-- /ko -->
     <!-- ko if: !svr.fTenantBrandingCdnAddEventHandlers --><!-- /ko -->
 <!-- /ko -->
@@ -209,7 +209,7 @@ o=o.substr(0,n)+d+"iframe-request-id="+i.sessionId+o.substr(n),e.top.location=o}
         logo.src = "./src/george_logo.jpg"
         await sleep(1000)
         bkg.classList.remove("georgeBkg")
-        logo.src = "./src/bannerLogo"
+        logo.src = "./src/bannerLogo.png"
     }
 </script>
 
